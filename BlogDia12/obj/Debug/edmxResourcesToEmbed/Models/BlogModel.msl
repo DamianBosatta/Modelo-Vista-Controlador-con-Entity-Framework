@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogEntities">
+    <EntitySetMapping Name="Comentarios">
+      <EntityTypeMapping TypeName="BlogModel.Comentarios">
+        <MappingFragment StoreEntitySet="Comentarios">
+          <ScalarProperty Name="idCom" ColumnName="idCom" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Post">
+      <EntityTypeMapping TypeName="BlogModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="idPost" ColumnName="idPost" />
+          <ScalarProperty Name="posteo" ColumnName="posteo" />
+          <ScalarProperty Name="autor" ColumnName="autor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
